@@ -1,0 +1,20 @@
+
+    DECLARE employee_id, employee_name, hourly_rate, hours_worked, salary, taxes AS NUMERIC
+    DECLARE tax_rate AS CONSTANT NUMERIC = 0.15  // Assume a 15% tax rate
+
+    // Input employee details
+    INPUT "Enter employee ID: ", employee_id
+    INPUT "Enter employee name: ", employee_name
+    INPUT "Enter hourly rate: ", hourly_rate
+    INPUT "Enter hours worked: ", hours_worked
+
+    // Calculate salary
+    salary = hours_worked * hourly_rate
+    taxes = salary * tax_rate
+    salary = salary - taxes
+
+    // Display employee details
+    OUTPUT "Employee ID: ", employee_id
+    OUTPUT "Employee Name: ", employee_name
+    OUTPUT "Calculated Salary: $", salary
+    

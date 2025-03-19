@@ -1,0 +1,53 @@
+// Define Book structure
+struct Book {
+    string title;
+    string author;
+    string ISBN;
+    bool availability;
+};
+
+// Define User structure
+struct User {
+    int userID;
+    string name;
+    vector<string> borrowedBooks; // Assuming vector for dynamic list of borrowed book ISBNs
+};
+
+// Define functions for Library Management System
+function addBook(title, author, ISBN) {
+    // Implement adding a book to the library
+    // Check if maximum capacity is not exceeded
+    // Add new book to the 'library' array
+}
+
+function addUser(userID, name) {
+    // Implement adding a user to the system
+    // Check if maximum capacity is not exceeded
+    // Add new user to the 'users' array
+}
+
+function borrowBook(userID, ISBN) {
+    // Implement borrowing a book by a user
+    // Find the user in 'users' array
+    // Check if the book is available in 'library' array
+    // Update availability and add to user's borrowed books
+}
+
+function returnBook(userID, ISBN) {
+    // Implement returning a borrowed book
+    // Find the user in 'users' array
+    // Check if the book is borrowed by the user
+    // Update availability and remove from user's borrowed books
+}
+
+function listBooks() {
+    // Implement listing all books and their statuses
+    // Iterate through 'library' array and print details
+}
+
+// Main function or program entry point
+function main() {
+    // Implement main menu for user interaction
+    // Use a loop to display menu options and process user input
+    // Call respective functions based on user choice
+}
