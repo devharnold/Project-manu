@@ -20,10 +20,7 @@ def load_totp_secret():
         return secret
 
 TOTP_SECRET = load_totp_secret()
-
-
 masterPasswordCheck = b'LN8lPPibuqkcQUGj/Ca06wvNYrEa8pb2jSs/5pB+Rkw='
-
 
 saver = Saver("passwords.txt")
 passwords = saver.read()
